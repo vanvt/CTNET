@@ -14,6 +14,6 @@
 		<input type="text" name="capcha" id ="capcha">
 		<input type="submit" value="Submit">
 	</form>
-	
+	ocs chos
 </body>
 </html>
