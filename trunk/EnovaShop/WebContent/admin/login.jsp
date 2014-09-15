@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<html:form action="logins">
+	<html:form action="/loginadmin">
 		<html:messages id="check" property="passwordMessageError">
 			<bean:write name="check" />
 		</html:messages>
