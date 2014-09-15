@@ -9,10 +9,13 @@ Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 			type="vn.com.fpt.form.LoginUserForm" />
 	</form-beans>
 	<action-mappings>
-		<action path="/logins"
+		<action path="/loginadmin"
+			scope="session"
 			type="vn.com.fpt.action.LoginAdminAction" name="loginAdminForm"
-			validate="true" input="/admin/login.jsp">
-			<forward name="loginadmin" path="/admin/index.jsp" />
+			validate="true" input="/admin/login.jsp" >
+			<forward name="success" path="/admin/index.jsp" />
+			<forward name="fail" path="/admin/login.jsp" />
+			
 		</action>
 
 		

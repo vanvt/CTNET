@@ -16,7 +16,6 @@ public class LoginAdminDAO {
 		Common common = new Common();
 		try {
 			Password = common.encryptPassword(Password);
-			System.out.println(Password);
 		} catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -24,7 +23,7 @@ public class LoginAdminDAO {
 		try{
 		Connection con;			
 		con = BaseDAO.getConnection();
-		String CheckLogin = "{call CheckAdmin(?,?)}";
+		String CheckLogin = "{call login_admin(?,?)}";
 		CallableStatement  callableStatement = con.prepareCall(CheckLogin);
 		callableStatement.setString(1,Account );
 		callableStatement.setString(2, Password);	

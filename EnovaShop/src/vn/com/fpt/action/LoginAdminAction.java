@@ -16,12 +16,13 @@ package vn.com.fpt.action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import vn.com.fpt.bean.Users;
+
+import vn.com.fpt.bo.LoginAdminBO;
 import vn.com.fpt.form.LoginAdminForm;
 
 /**
@@ -45,12 +46,12 @@ public class LoginAdminAction extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 	        HttpServletRequest request, HttpServletResponse response){
 		LoginAdminForm loginUserForm = (LoginAdminForm) form;
-		Users admin = new Users();
-		admin.setAccount(loginUserForm.getAccount());
-		admin.setPassword(loginUserForm.getPassword());
-		HttpSession session = request.getSession(true);
-        session.setAttribute("admin", admin);
-		return mapping.findForward("loginadmin");
+		
+		LoginAdminBO adminBO = new LoginAdminBO();
+		if(adminBO.checkLoginAdmin(loginUserForm.getAccount(), loginUserForm.getPassword())){
+			return mapping.findForward("success");
+		}
+		return mapping.findForward("fail");
 		
 	}
 }
