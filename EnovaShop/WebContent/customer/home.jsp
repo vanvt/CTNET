@@ -1,4 +1,5 @@
 <jsp:include page="/customer/header.jsp" />
+<jsp:include page="/customer/modal.jsp"/>
 <jsp:include page="/customer/sidebar.jsp" />
 
 <div class="col-md-9 main-content">
