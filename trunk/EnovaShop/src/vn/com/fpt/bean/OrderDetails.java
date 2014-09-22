@@ -1,6 +1,5 @@
 package vn.com.fpt.bean;
 
-import java.util.ArrayList;
 
 public class OrderDetails {
 	private Orders orders;
