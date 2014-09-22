@@ -4,7 +4,7 @@ public class Categories {
 	private int categoryId;
 	private String categoryName;
 	private String description;
-	private String categoryParent;
+	private int categoryParent;
 	private String categoryAlias;
 	private String homePublish;
 	private int position;
@@ -27,10 +27,11 @@ public class Categories {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getCategoryParent() {
+	
+	public int getCategoryParent() {
 		return categoryParent;
 	}
-	public void setCategoryParent(String categoryParent) {
+	public void setCategoryParent(int categoryParent) {
 		this.categoryParent = categoryParent;
 	}
 	public String getCategoryAlias() {
