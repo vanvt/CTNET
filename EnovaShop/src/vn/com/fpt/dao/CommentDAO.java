@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import vn.com.fpt.bean.City;
 import vn.com.fpt.bean.Comments;
 import vn.com.fpt.exception.DAOException;
 
