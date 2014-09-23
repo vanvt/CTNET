@@ -4,6 +4,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import vn.com.fpt.bean.Categories;
 import vn.com.fpt.exception.DAOException;
@@ -74,6 +75,45 @@ public class CategoryDAO {
 				cate.setPosition(resultSet.getInt("Possition"));
 			} 
 			return cate;
+		} catch (SQLException e) {
+			throw new DAOException(e.getMessage());
+		} catch (DAOException e) {
+			throw new DAOException(e.getMessage());
+		} finally {
+			try {
+				if (resultSet!=null) resultSet.close();
+				if (callableStatement != null)	callableStatement.close();
+				if (connection != null)	connection.close();
+			} catch (SQLException e) {
+				throw new DAOException(e.getMessage());
+			}
+		}
+	}
+	/**
+	 * Get All Categories
+	 * @return
+	 * @throws DAOException
+	 */
+	public ArrayList<Categories> getAllCategories() throws DAOException {
+		ArrayList<Categories> listCate = new ArrayList<Categories>();
+		try {
+			connection = BaseDAO.getConnection();
+			String sql = "{call selectAllCategory}"; // Call store procedure to add new admin account
+			callableStatement = connection.prepareCall(sql);
+			resultSet = callableStatement.executeQuery();
+			
+			while(resultSet.next()){
+				Categories cate = new Categories();
+				cate.setCategoryId(resultSet.getInt("CategoryId"));
+				cate.setCategoryAlias(resultSet.getString("CategoryAlias"));
+				cate.setCategoryName(resultSet.getString("CategoryName"));
+				cate.setCategoryParent(resultSet.getInt("CategoryParent"));
+				cate.setDescription(resultSet.getString("Description"));
+				cate.setHomePublish(resultSet.getString("HomePublic"));
+				cate.setPosition(resultSet.getInt("Possition"));
+				listCate.add(cate);
+			} 
+			return listCate;
 		} catch (SQLException e) {
 			throw new DAOException(e.getMessage());
 		} catch (DAOException e) {

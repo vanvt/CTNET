@@ -1,5 +1,7 @@
 package vn.com.fpt.bo;
 
+import java.util.ArrayList;
+
 import vn.com.fpt.bean.Categories;
 import vn.com.fpt.dao.CategoryDAO;
 import vn.com.fpt.exception.DAOException;
@@ -23,5 +25,13 @@ public class CategoryBO {
 	 */
 	public Categories getCategoryByAlias(String alias) throws DAOException {
 		return categoryDAO.getCategoryByAlias(alias);
+	}
+	/**
+	 * Get All Category
+	 * @return
+	 * @throws DAOException
+	 */
+	public ArrayList<Categories> getAllCategories() throws DAOException{
+		return categoryDAO.getAllCategories();
 	}
 }
