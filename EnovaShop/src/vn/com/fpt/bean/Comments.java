@@ -5,6 +5,8 @@ public class Comments {
 	private String title;
 	private String content;
 	private Customers customer;
+	private int productId;
+	
 	public int getCommentId() {
 		return commentId;
 	}
@@ -13,6 +15,13 @@ public class Comments {
 	}
 	public String getTitle() {
 		return title;
+	}
+	
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 	public void setTitle(String title) {
 		this.title = title;

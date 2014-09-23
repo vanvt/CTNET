@@ -1,0 +1,9 @@
+package vn.com.fpt.bo;
+
+import vn.com.fpt.dao.CityDAO;
+
+public class CityBO {
+	private CityDAO cityDAO = new CityDAO();
+	
+	
+}

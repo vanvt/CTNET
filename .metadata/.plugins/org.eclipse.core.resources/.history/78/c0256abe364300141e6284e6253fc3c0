@@ -1,0 +1,11 @@
+package vn.com.fpt.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+public class CommentDAO {
+	private Connection connection = null;
+	private CallableStatement callableStatement = null;
+	private ResultSet resultSet = null;
+}
