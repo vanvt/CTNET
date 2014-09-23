@@ -1,0 +1,51 @@
+package vn.com.fpt.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import vn.com.fpt.bean.City;
+import vn.com.fpt.exception.DAOException;
+
+public class CityDAO {
+	private Connection connection = null;
+	private CallableStatement callableStatement = null;
+	private ResultSet resultSet = null;
+	/**
+	 * Get City by ID
+	 * @param id
+	 * @return
+	 * @throws DAOException 
+	 */
+	public City getCityById(int id) throws DAOException {
+		// TODO Auto-generated method stub
+		
+		try {
+			connection = BaseDAO.getConnection();
+			String sql = "{call selectCityById(?)}"; // Call store procedure to add new admin account
+			callableStatement = connection.prepareCall(sql);
+			callableStatement.setInt(1, id);
+			resultSet = callableStatement.executeQuery();
+			City city = new City();
+			while(resultSet.next()){
+				city.setCityId(id);
+				city.setCity(resultSet.getString("City"));
+				city.setFeeDelivery(resultSet.getDouble("FeeDelivery"));
+			} 
+			return city;
+		} catch (SQLException e) {
+			throw new DAOException(e.getMessage());
+		} catch (DAOException e) {
+			throw new DAOException(e.getMessage());
+		} finally {
+			try {
+				if (resultSet!=null) resultSet.close();
+				if (callableStatement != null)	callableStatement.close();
+				if (connection != null)	connection.close();
+			} catch (SQLException e) {
+				throw new DAOException(e.getMessage());
+			}
+		}
+	}
+
+}

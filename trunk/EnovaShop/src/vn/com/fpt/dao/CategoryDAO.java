@@ -128,5 +128,99 @@ public class CategoryDAO {
 			}
 		}
 	}
+	/**
+	 * Delete category
+	 * @param id
+	 * @throws DAOException
+	 */
+	public boolean deleteCategory(int id) throws DAOException {
+		try {
+			connection = BaseDAO.getConnection();
+			String sql = "{call deleteCategoryById}"; // Call store procedure to add new admin account
+			callableStatement = connection.prepareCall(sql);
+			return callableStatement.execute();
+		} catch (SQLException e) {
+			throw new DAOException(e.getMessage());
+		} catch (DAOException e) {
+			throw new DAOException(e.getMessage());
+		} finally {
+			try {
+				if (callableStatement != null)	callableStatement.close();
+				if (connection != null)	connection.close();
+			} catch (SQLException e) {
+				throw new DAOException(e.getMessage());
+			}
+		}
+		
+	}
+	/**
+	 * Update category
+	 * @param cate
+	 * @return
+	 * @throws DAOException 
+	 */
+	public boolean updateCategory(Categories cate) throws DAOException {
+		try {
+			connection = BaseDAO.getConnection();
+			String sql = "{call updateCategory(?,?,?,?,?,?,?)}"; // Call store procedure to add new admin account
+			callableStatement = connection.prepareCall(sql);
+			
+			callableStatement.setInt(1, cate.getCategoryId());
+			callableStatement.setString(2,cate.getCategoryName());
+			callableStatement.setString(3,cate.getDescription());
+			callableStatement.setInt(4, cate.getCategoryParent());
+			callableStatement.setString(5,cate.getCategoryAlias());
+			callableStatement.setString(6,cate.getHomePublish());
+			callableStatement.setInt(7, cate.getPosition());
+			
+			return callableStatement.execute();
+		} catch (SQLException e) {
+			throw new DAOException(e.getMessage());
+		} catch (DAOException e) {
+			throw new DAOException(e.getMessage());
+		} finally {
+			try {
+				if (callableStatement != null)	callableStatement.close();
+				if (connection != null)	connection.close();
+			} catch (SQLException e) {
+				throw new DAOException(e.getMessage());
+			}
+		}
+		
+	}
+	/**
+	 * Insert Category
+	 * @param cate
+	 * @return
+	 * @throws DAOException
+	 */
+	public boolean insertCategory(Categories cate) throws DAOException {
+		try {
+			connection = BaseDAO.getConnection();
+			String sql = "{call insertCategory(?,?,?,?,?,?)}"; // Call store procedure to add new admin account
+			callableStatement = connection.prepareCall(sql);
+			
+			callableStatement.setString(1,cate.getCategoryName());
+			callableStatement.setString(2,cate.getDescription());
+			callableStatement.setInt(3, cate.getCategoryParent());
+			callableStatement.setString(4,cate.getCategoryAlias());
+			callableStatement.setString(5,cate.getHomePublish());
+			callableStatement.setInt(6, cate.getPosition());
+			
+			return callableStatement.execute();
+		} catch (SQLException e) {
+			throw new DAOException(e.getMessage());
+		} catch (DAOException e) {
+			throw new DAOException(e.getMessage());
+		} finally {
+			try {
+				if (callableStatement != null)	callableStatement.close();
+				if (connection != null)	connection.close();
+			} catch (SQLException e) {
+				throw new DAOException(e.getMessage());
+			}
+		}
+		
+	}
 
 }

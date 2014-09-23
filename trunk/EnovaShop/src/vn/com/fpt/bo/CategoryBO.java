@@ -18,7 +18,6 @@ public class CategoryBO {
 		return categoryDAO.getCategoryById(id);
 	}
 	
-	
 	/**
 	 * Get Category By Alias
 	 * @param alias
@@ -36,4 +35,27 @@ public class CategoryBO {
 	public ArrayList<Categories> getAllCategories() throws DAOException{
 		return categoryDAO.getAllCategories();
 	}
+	/**
+	 * Delete category
+	 * @param id
+	 * @throws DAOException
+	 */
+	public boolean deleteCategory(int id) throws DAOException{
+		return categoryDAO.deleteCategory(id);
+	}
+	
+	public boolean updateCategory(Categories cate) throws DAOException{
+		return categoryDAO.updateCategory(cate);
+	}
+	/**
+	 * Insert Category
+	 * @param cate
+	 * @return
+	 * @throws DAOException
+	 */
+	public boolean insertCategory(Categories cate) throws DAOException
+	{
+		return categoryDAO.insertCategory(cate);
+	}
+	
 }

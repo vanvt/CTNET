@@ -3,7 +3,7 @@ package vn.com.fpt.bean;
 public class City {
 	private int cityId;
 	private String city;
-	private String FeeDelivery;
+	private double FeeDelivery;
 	public String getCity() {
 		return city;
 	}
@@ -16,13 +16,14 @@ public class City {
 	public void setCityId(int cityId) {
 		this.cityId = cityId;
 	}
-	public String getFeeDelivery() {
+	public double getFeeDelivery() {
 		return FeeDelivery;
 	}
-	public void setFeeDelivery(String feeDelivery) {
+	public void setFeeDelivery(double feeDelivery) {
 		FeeDelivery = feeDelivery;
 	}
 	
+
 	 
 	
 }
