@@ -17,6 +17,8 @@ public class CategoryBO {
 	public Categories getCategoryById(int id) throws DAOException{
 		return categoryDAO.getCategoryById(id);
 	}
+	
+	
 	/**
 	 * Get Category By Alias
 	 * @param alias
