@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\bin\Debug\UserEntity.dll
+c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\bin\Debug\UserEntity.pdb
+c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.dll
+c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.pdb
