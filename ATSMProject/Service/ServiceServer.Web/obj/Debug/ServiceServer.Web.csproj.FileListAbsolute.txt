@@ -1,5 +1,0 @@
-c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\ServiceServer.Web\bin\Debug\ServiceServer.Web.dll
-c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\ServiceServer.Web\bin\Debug\ServiceServer.Web.pdb
-c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\ServiceServer.Web\obj\Debug\ServiceServer.Web.csprojResolveAssemblyReference.cache
-c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\ServiceServer.Web\obj\Debug\ServiceServer.Web.dll
-c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\ServiceServer.Web\obj\Debug\ServiceServer.Web.pdb
