@@ -3,3 +3,9 @@ c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\bin\
 c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.csprojResolveAssemblyReference.cache
 c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.dll
 c:\users\admin\documents\visual studio 2012\Projects\ATSMProject\UserEntity\obj\Debug\UserEntity.pdb
+F:\online-shop-enova\ATSMProject\Entity\UserEntity\bin\Debug\UserEntity.dll
+F:\online-shop-enova\ATSMProject\Entity\UserEntity\bin\Debug\UserEntity.pdb
+F:\online-shop-enova\ATSMProject\Entity\UserEntity\obj\Debug\UserEntity.dll
+F:\online-shop-enova\ATSMProject\Entity\UserEntity\obj\Debug\UserEntity.pdb
+F:\online-shop-enova\ATSMProject\Library\UserEntity.dll
+F:\online-shop-enova\ATSMProject\Library\UserEntity.pdb
