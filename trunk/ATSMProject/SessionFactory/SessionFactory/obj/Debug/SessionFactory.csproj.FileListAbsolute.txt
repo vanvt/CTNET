@@ -1,9 +1,0 @@
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\bin\Debug\SessionFactory.dll
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\bin\Debug\SessionFactory.pdb
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\bin\Debug\NHibernate.dll
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\bin\Debug\UserEntity.dll
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\bin\Debug\UserEntity.pdb
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\obj\Debug\SessionFactory.dll
-F:\online-shop-enova\ATSMProject\SessionFactory\SessionFactory\obj\Debug\SessionFactory.pdb
-F:\online-shop-enova\ATSMProject\Library\SessionFactory.dll
-F:\online-shop-enova\ATSMProject\Library\SessionFactory.pdb

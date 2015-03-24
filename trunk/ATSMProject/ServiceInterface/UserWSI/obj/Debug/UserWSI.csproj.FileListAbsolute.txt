@@ -1,8 +1,0 @@
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\bin\Debug\UserWSI.dll
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\bin\Debug\UserWSI.pdb
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\bin\Debug\UserEntity.dll
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\bin\Debug\UserEntity.pdb
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\obj\Debug\UserWSI.dll
-F:\online-shop-enova\ATSMProject\ServiceInterface\UserWSI\obj\Debug\UserWSI.pdb
-F:\online-shop-enova\ATSMProject\Library\UserWSI.dll
-F:\online-shop-enova\ATSMProject\Library\UserWSI.pdb
