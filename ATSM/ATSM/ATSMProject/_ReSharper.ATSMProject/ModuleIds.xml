@@ -1,0 +1,10 @@
+<Modules>
+  <Module PersistentId="4E7475CB-597D-46CE-8FF7-EE5B61CD6BDF" ModuleId="UserAccesser" />
+  <Module PersistentId="B6585947-6D87-4B68-9A2A-09BF2CD19A8B" ModuleId="UserWSI" />
+  <Module PersistentId="3F0378A1-AB7E-42B7-A41E-DF3165F63926" ModuleId="UserBL" />
+  <Module PersistentId="07D115D4-B4CB-4A3A-82F9-1778BAC6DEC7" ModuleId="UserCL" />
+  <Module PersistentId="7AC64EB0-AF57-481D-A437-FBB1EF004E3D" ModuleId="ServiceServer" />
+  <Module PersistentId="C409AE0A-9478-4543-A1DE-4A4C00BB4FBD" ModuleId="SessionFactory" />
+  <Module PersistentId="5CD49265-F998-4FCD-88CD-C928B09DC3BF" ModuleId="ATSMProject" />
+  <Module PersistentId="5D135CE0-451D-4C90-A26A-C7A61725B668" ModuleId="ServiceClient" />
+</Modules>

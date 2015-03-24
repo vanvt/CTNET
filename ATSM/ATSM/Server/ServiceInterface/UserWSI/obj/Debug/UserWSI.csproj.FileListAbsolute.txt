@@ -1,0 +1,9 @@
+C:\Users\PhucTNH\Desktop\ATSM\Server\Library\UserWSI.dll
+C:\Users\PhucTNH\Desktop\ATSM\Server\Library\UserWSI.pdb
+C:\Users\PhucTNH\Desktop\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.dll
+C:\Users\PhucTNH\Desktop\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserWSI.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserWSI.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.pdb

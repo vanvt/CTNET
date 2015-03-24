@@ -1,0 +1,10 @@
+C:\Users\PhucTNH\Desktop\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll.config
+C:\Users\PhucTNH\Desktop\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll
+C:\Users\PhucTNH\Desktop\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.pdb
+C:\Users\PhucTNH\Desktop\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.dll
+C:\Users\PhucTNH\Desktop\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll.config
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.pdb

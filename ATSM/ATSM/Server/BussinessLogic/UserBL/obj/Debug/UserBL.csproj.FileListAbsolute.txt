@@ -1,0 +1,10 @@
+C:\Users\PhucTNH\Desktop\ATSM\Server\Library\UserBL.dll
+C:\Users\PhucTNH\Desktop\ATSM\Server\Library\UserBL.pdb
+C:\Users\PhucTNH\Desktop\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.dll
+C:\Users\PhucTNH\Desktop\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.pdb
+C:\Users\PhucTNH\Desktop\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserBL.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserBL.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.dll
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.pdb
+C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.csprojResolveAssemblyReference.cache
