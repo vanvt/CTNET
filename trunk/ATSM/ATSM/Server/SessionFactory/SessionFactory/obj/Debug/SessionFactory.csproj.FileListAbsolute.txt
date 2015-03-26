@@ -7,3 +7,8 @@ C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\SessionFactory.pdb
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.csprojResolveAssemblyReference.cache
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.dll
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\SessionFactory.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\SessionFactory.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.dll
+F:\online-shop-enova\ATSM\ATSM\Server\SessionFactory\SessionFactory\obj\Debug\SessionFactory.pdb

@@ -6,14 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using ServiceClient.UserWS;
+using ServiceClient;
 
 namespace ATSMProject
 {
     public partial class Form1 : Form
     {
-        public UserWS WS = new UserWS();
-        public UserWSI WSI = new UserWSI();
+        private ServiceClient.LoginUserWS.LoginUserWS _ws = new ServiceClient.LoginUserWS.LoginUserWS();
+        private ServiceClient.LoginUserWS.LoginUserWSI _wsi = new ServiceClient.LoginUserWS.LoginUserWSI();
         public Form1()
         {
             InitializeComponent();
@@ -23,11 +23,19 @@ namespace ATSMProject
         {
             try
             {
-                WSI.ATSMUser = new ATSMUser();
-                WSI.ATSMUser.Id = int.Parse(textBox1.Text);
-                WSI.ATSMUser.Password = textBox2.Text;
-                WSI.Mode = "SAV";
-                WSI = WS.CallService(WSI);
+                _wsi.LoginUser = new ServiceClient.LoginUserWS.LoginUser();
+                _wsi.LoginUser.LoginUserId = textBox1.Text;
+                _wsi.LoginUser.Password = textBox2.Text;
+                _wsi.Mode = "SEL";
+                _wsi = _ws.CallService(_wsi);
+                if (_wsi.LoginUser != null)
+                {
+                    MessageBox.Show("Login Complete");
+                }
+                else
+                {
+                    MessageBox.Show("Password incorrect");
+                }
             }
             catch (Exception ex)
             {

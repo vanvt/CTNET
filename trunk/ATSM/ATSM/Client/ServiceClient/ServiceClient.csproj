@@ -46,6 +46,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Web References\LoginUserWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\UserWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -64,6 +69,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Web References\LoginUserWS\LoginUserWS.wsdl" />
+    <None Include="Web References\LoginUserWS\LoginUserWSI.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LoginUserWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Web References\UserWS\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -74,6 +87,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:54570/LoginUserWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LoginUserWS\</RelPath>
+      <UpdateFromURL>http://localhost:54570/LoginUserWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ServiceClient_LoginUserWS_LoginUserWS</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost:54570/UserWS.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\UserWS\</RelPath>
@@ -88,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\UserWS\UserWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\LoginUserWS\LoginUserWS.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

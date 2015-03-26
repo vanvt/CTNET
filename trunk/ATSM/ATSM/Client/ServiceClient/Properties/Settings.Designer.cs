@@ -32,5 +32,15 @@ namespace ServiceClient.Properties {
                 return ((string)(this["ServiceClient_UserWS_UserWS"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:54570/LoginUserWS.asmx")]
+        public string ServiceClient_LoginUserWS_LoginUserWS {
+            get {
+                return ((string)(this["ServiceClient_LoginUserWS_LoginUserWS"]));
+            }
+        }
     }
 }
