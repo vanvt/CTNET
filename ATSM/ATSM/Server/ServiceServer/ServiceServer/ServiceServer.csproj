@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LoginUserBL">
+      <HintPath>..\..\Library\LoginUserBL.dll</HintPath>
+    </Reference>
+    <Reference Include="LoginUserWSI">
+      <HintPath>..\..\Library\LoginUserWSI.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Library\NHibernate.dll</HintPath>
@@ -73,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LoginUserWS.asmx" />
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -82,6 +89,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginUserWS.asmx.cs">
+      <DependentUpon>LoginUserWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserWS.asmx.cs">
       <DependentUpon>UserWS.asmx</DependentUpon>

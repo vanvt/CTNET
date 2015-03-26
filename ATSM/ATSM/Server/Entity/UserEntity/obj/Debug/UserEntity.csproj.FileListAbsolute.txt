@@ -14,3 +14,7 @@ C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Entity\UserEntity\obj\Debug\UserEntity.d
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Entity\UserEntity\obj\Debug\UserEntity.pdb
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserEntity.dll
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\UserEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\UserEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\UserEntity\obj\Debug\UserEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\UserEntity\obj\Debug\UserEntity.pdb

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CallService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsi" type="tns:LoginUserWSI" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoginUserWSI">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginUser" type="tns:LoginUser" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsWsiError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WsiError" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoginUser">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginUserId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="UpdateDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteUserId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewPassword" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CallServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceResult" type="tns:LoginUserWSI" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CallServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:CallService" />
+  </wsdl:message>
+  <wsdl:message name="CallServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:CallServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LoginUserWSSoap">
+    <wsdl:operation name="CallService">
+      <wsdl:input message="tns:CallServiceSoapIn" />
+      <wsdl:output message="tns:CallServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoginUserWSSoap" type="tns:LoginUserWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CallService">
+      <soap:operation soapAction="http://tempuri.org/CallService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoginUserWSSoap12" type="tns:LoginUserWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CallService">
+      <soap12:operation soapAction="http://tempuri.org/CallService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoginUserWS">
+    <wsdl:port name="LoginUserWSSoap" binding="tns:LoginUserWSSoap">
+      <soap:address location="http://localhost:54570/LoginUserWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoginUserWSSoap12" binding="tns:LoginUserWSSoap12">
+      <soap12:address location="http://localhost:54570/LoginUserWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

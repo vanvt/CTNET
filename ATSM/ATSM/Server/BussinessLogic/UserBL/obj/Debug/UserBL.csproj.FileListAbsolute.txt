@@ -8,3 +8,8 @@ C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\Library\UserBL.pdb
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.dll
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.pdb
 C:\Users\ADMIN\Desktop\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Library\UserBL.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\UserBL.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.dll
+F:\online-shop-enova\ATSM\ATSM\Server\BussinessLogic\UserBL\obj\Debug\UserBL.pdb
