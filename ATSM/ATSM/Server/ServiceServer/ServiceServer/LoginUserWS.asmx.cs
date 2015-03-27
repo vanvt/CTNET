@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.Services;
 using System.Web.Services.Protocols;
 using System.Xml.Linq;
@@ -31,6 +32,17 @@ namespace JVL
             //}
             wsi = BL.CallBussinessLogic(wsi);
             return wsi;
+        }
+        [WebMethod]
+        public String CallServiceWithJson(String jsonWsi)
+        {
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            LoginUserWSI wsi = new LoginUserWSI();
+            wsi = js.Deserialize<LoginUserWSI>(jsonWsi);
+            LoginUserBL BL = new LoginUserBL();
+            wsi = BL.CallBussinessLogic(wsi);
+            string str = js.Serialize(wsi);
+            return str;
         }
     }
 }
