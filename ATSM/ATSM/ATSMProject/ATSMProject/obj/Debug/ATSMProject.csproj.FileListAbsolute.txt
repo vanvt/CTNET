@@ -31,3 +31,14 @@ F:\online-shop-enova\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.csp
 F:\online-shop-enova\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.Form1.resources
 F:\online-shop-enova\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.Properties.Resources.resources
 F:\online-shop-enova\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.csproj.GenerateResource.Cache
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\bin\Debug\ATSMProject.exe.config
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.exe
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.pdb
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\bin\Debug\ATSMProject.exe
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\bin\Debug\ATSMProject.pdb
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\bin\Debug\ServiceClient.dll
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\bin\Debug\ServiceClient.pdb
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.Form1.resources
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.Properties.Resources.resources
+E:\Doanbk\ATSM\ATSM\ATSMProject\ATSMProject\obj\Debug\ATSMProject.csproj.GenerateResource.Cache
