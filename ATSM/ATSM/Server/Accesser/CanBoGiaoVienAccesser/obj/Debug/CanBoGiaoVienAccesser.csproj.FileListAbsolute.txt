@@ -1,0 +1,5 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\CanBoGiaoVienAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\CanBoGiaoVienAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.csprojResolveAssemblyReference.cache

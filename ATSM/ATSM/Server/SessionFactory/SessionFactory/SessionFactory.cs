@@ -28,6 +28,10 @@ namespace JVL
 
             config.AddAssembly(typeof(ATSMUser).Assembly);
             config.AddAssembly(typeof(LoginUser).Assembly);
+            config.AddAssembly(typeof(CanBoGiaoVien).Assembly);
+            config.AddAssembly(typeof(ChucVu).Assembly);
+            config.AddAssembly(typeof(TheLoaiTin).Assembly);
+            config.AddAssembly(typeof(TinTucDaoTao).Assembly);
             _SessionFactory = config.BuildSessionFactory();
 
         }

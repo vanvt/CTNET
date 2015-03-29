@@ -1,0 +1,5 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoBL.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoBL.pdb
+E:\Doanbk\ATSM\ATSM\Server\BussinessLogic\TinTucDaoTaoBL\obj\Debug\TinTucDaoTaoBL.dll
+E:\Doanbk\ATSM\ATSM\Server\BussinessLogic\TinTucDaoTaoBL\obj\Debug\TinTucDaoTaoBL.pdb
+E:\Doanbk\ATSM\ATSM\Server\BussinessLogic\TinTucDaoTaoBL\obj\Debug\TinTucDaoTaoBL.csprojResolveAssemblyReference.cache

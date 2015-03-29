@@ -13,3 +13,8 @@ F:\online-shop-enova\ATSM\ATSM\Server\Library\UserCL.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.csprojResolveAssemblyReference.cache
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.dll
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.pdb
+E:\Doanbk\ATSM\ATSM\Server\Library\UserCL.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\UserCL.pdb
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.dll
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\UserCL\obj\Debug\UserCL.pdb

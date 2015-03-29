@@ -1,0 +1,4 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.pdb

@@ -65,6 +65,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
+    <Reference Include="TinTucDaoTaoBL">
+      <HintPath>..\..\Library\TinTucDaoTaoBL.dll</HintPath>
+    </Reference>
+    <Reference Include="TinTucDaoTaoWSI">
+      <HintPath>..\..\Library\TinTucDaoTaoWSI.dll</HintPath>
+    </Reference>
     <Reference Include="UserBL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Library\UserBL.dll</HintPath>
@@ -83,6 +89,7 @@
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="TinTucDaoTaoWS.asmx" />
     <Content Include="UserWS.asmx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -94,6 +101,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinTucDaoTaoWS.asmx.cs">
+      <DependentUpon>TinTucDaoTaoWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserWS.asmx.cs">
       <DependentUpon>UserWS.asmx</DependentUpon>
       <SubType>Component</SubType>

@@ -1,0 +1,5 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoWSI.pdb
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\TinTucDaoTaoWSI\obj\Debug\TinTucDaoTaoWSI.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\TinTucDaoTaoWSI\obj\Debug\TinTucDaoTaoWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\TinTucDaoTaoWSI\obj\Debug\TinTucDaoTaoWSI.pdb

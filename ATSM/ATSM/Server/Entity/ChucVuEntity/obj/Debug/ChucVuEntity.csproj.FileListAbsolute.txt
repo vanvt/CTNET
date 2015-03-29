@@ -1,0 +1,4 @@
+E:\Doanbk\ATSM\ATSM\Server\library\ChucVuEntity.dll
+E:\Doanbk\ATSM\ATSM\Server\library\ChucVuEntity.pdb
+E:\Doanbk\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.dll
+E:\Doanbk\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.pdb
