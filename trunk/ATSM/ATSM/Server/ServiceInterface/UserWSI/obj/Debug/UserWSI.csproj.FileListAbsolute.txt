@@ -12,3 +12,8 @@ F:\online-shop-enova\ATSM\ATSM\Server\Library\UserWSI.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.csprojResolveAssemblyReference.cache
 F:\online-shop-enova\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.dll
 F:\online-shop-enova\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.pdb
+E:\Doanbk\ATSM\ATSM\Server\Library\UserWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\UserWSI.pdb
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\UserWSI\obj\Debug\UserWSI.pdb

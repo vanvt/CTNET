@@ -1,0 +1,4 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\ChucVuAcceser.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\ChucVuAcceser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.dll
+E:\Doanbk\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.pdb

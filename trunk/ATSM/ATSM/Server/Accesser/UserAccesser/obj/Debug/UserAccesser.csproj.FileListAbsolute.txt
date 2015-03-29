@@ -12,3 +12,8 @@ F:\online-shop-enova\ATSM\ATSM\Server\Library\UserAccesser.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.csprojResolveAssemblyReference.cache
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.dll
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Library\UserAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\UserAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Accesser\UserAccesser\obj\Debug\UserAccesser.pdb

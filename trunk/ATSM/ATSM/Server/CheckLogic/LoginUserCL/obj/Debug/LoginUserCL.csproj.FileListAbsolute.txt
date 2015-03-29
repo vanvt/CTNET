@@ -3,3 +3,8 @@ F:\online-shop-enova\ATSM\ATSM\Server\Library\LoginUserCL.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.dll
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\Library\LoginUserCL.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\LoginUserCL.pdb
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.dll
+E:\Doanbk\ATSM\ATSM\Server\CheckLogic\LoginUserCL\obj\Debug\LoginUserCL.pdb

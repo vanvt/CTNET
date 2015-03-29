@@ -1,0 +1,5 @@
+E:\Doanbk\ATSM\ATSM\Server\Library\TheLoaiTinAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\TheLoaiTinAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\TheLoaiTinAccesser\obj\Debug\TheLoaiTinAccesser.dll
+E:\Doanbk\ATSM\ATSM\Server\Accesser\TheLoaiTinAccesser\obj\Debug\TheLoaiTinAccesser.pdb
+E:\Doanbk\ATSM\ATSM\Server\Accesser\TheLoaiTinAccesser\obj\Debug\TheLoaiTinAccesser.csprojResolveAssemblyReference.cache

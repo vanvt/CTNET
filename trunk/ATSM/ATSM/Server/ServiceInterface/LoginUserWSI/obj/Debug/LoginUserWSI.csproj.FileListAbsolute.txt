@@ -2,3 +2,8 @@ F:\online-shop-enova\ATSM\ATSM\Server\Library\LoginUserWSI.dll
 F:\online-shop-enova\ATSM\ATSM\Server\Library\LoginUserWSI.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\ServiceInterface\LoginUserWSI\obj\Debug\LoginUserWSI.dll
 F:\online-shop-enova\ATSM\ATSM\Server\ServiceInterface\LoginUserWSI\obj\Debug\LoginUserWSI.pdb
+E:\Doanbk\ATSM\ATSM\Server\Library\LoginUserWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\Library\LoginUserWSI.pdb
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\LoginUserWSI\obj\Debug\LoginUserWSI.csprojResolveAssemblyReference.cache
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\LoginUserWSI\obj\Debug\LoginUserWSI.dll
+E:\Doanbk\ATSM\ATSM\Server\ServiceInterface\LoginUserWSI\obj\Debug\LoginUserWSI.pdb

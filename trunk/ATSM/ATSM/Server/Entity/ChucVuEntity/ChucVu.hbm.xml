@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="ChucVuEntity">
+    <class name="ChucVu" table="ChucVu">
+        <id name="Macv">
+            <column name="Macv" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Tencv">
+            <column name="Tencv" />
+        </property>
+    </class>
+</hibernate-mapping>

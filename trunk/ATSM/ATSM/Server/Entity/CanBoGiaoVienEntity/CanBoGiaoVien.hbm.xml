@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="CanBoGiaoVienEntity">
+    <class name="CanBoGiaoVien" table="CanBoGiaoVien">
+        <id name="Macbgv">
+            <column name="Macbgv" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Macv">
+            <column name="Macv" />
+        </property>
+        <property name="Tencbgv">
+            <column name="Tencbgv" />
+        </property>
+        <property name="Sodt">
+            <column name="Sodt" />
+        </property>
+        <property name="Email">
+            <column name="Email" />
+        </property>
+        <property name="Ngaysinh">
+            <column name="Ngaysinh" />
+        </property>
+        <property name="Noisinh">
+            <column name="Noisinh" />
+        </property>
+        <property name="Noithuongtru">
+            <column name="Noithuongtru" />
+        </property>
+        <property name="Gioitinh">
+            <column name="Gioitinh" />
+        </property>
+        <property name="Dantoc">
+            <column name="Dantoc" />
+        </property>
+        <property name="Tongiao">
+            <column name="Tongiao" />
+        </property>
+        <property name="Socmnd">
+            <column name="Socmnd" />
+        </property>
+        <property name="Matkhau">
+            <column name="Matkhau" />
+        </property>
+        <property name="DeleteDate">
+            <column name="DeleteDate" />
+        </property>
+        <property name="DeleteUserId">
+            <column name="DeleteUserId" />
+        </property>
+    </class>
+</hibernate-mapping>
