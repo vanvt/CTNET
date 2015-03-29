@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CallService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsi" type="tns:TinTucDaoTaoWSI" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TinTucDaoTaoWSI">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TinTucDaoTao" type="tns:ArrayOfTinTucDaoTao" />
+          <s:element minOccurs="0" maxOccurs="1" name="TheLoaiTin" type="tns:ArrayOfTheLoaiTin" />
+          <s:element minOccurs="0" maxOccurs="1" name="CanBoGiaoVien" type="tns:ArrayOfCanBoGiaoVien" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChucVu" type="tns:ArrayOfChucVu" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsWsiError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WsiError" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTinTucDaoTao">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TinTucDaoTao" nillable="true" type="tns:TinTucDaoTao" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TinTucDaoTao">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Matlt" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Macbgv" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tieude" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tomtat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Noidung" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Filedinhkem" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Thoigian" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hinhanh" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteUserId" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTheLoaiTin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TheLoaiTin" nillable="true" type="tns:TheLoaiTin" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TheLoaiTin">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Matlt" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tentlt" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCanBoGiaoVien">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CanBoGiaoVien" nillable="true" type="tns:CanBoGiaoVien" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CanBoGiaoVien">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Macbgv" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Macv" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tencbgv" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sodt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ngaysinh" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Noisinh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Noithuongtru" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gioitinh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dantoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tongiao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Socmnd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Matkhau" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeleteUserId" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfChucVu">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ChucVu" nillable="true" type="tns:ChucVu" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ChucVu">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Macv" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tencv" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CallServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallServiceResult" type="tns:TinTucDaoTaoWSI" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CallServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:CallService" />
+  </wsdl:message>
+  <wsdl:message name="CallServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:CallServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TinTucDaoTaoWSSoap">
+    <wsdl:operation name="CallService">
+      <wsdl:input message="tns:CallServiceSoapIn" />
+      <wsdl:output message="tns:CallServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TinTucDaoTaoWSSoap" type="tns:TinTucDaoTaoWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CallService">
+      <soap:operation soapAction="http://tempuri.org/CallService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TinTucDaoTaoWSSoap12" type="tns:TinTucDaoTaoWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CallService">
+      <soap12:operation soapAction="http://tempuri.org/CallService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TinTucDaoTaoWS">
+    <wsdl:port name="TinTucDaoTaoWSSoap" binding="tns:TinTucDaoTaoWSSoap">
+      <soap:address location="http://localhost:54570/TinTucDaoTaoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TinTucDaoTaoWSSoap12" binding="tns:TinTucDaoTaoWSSoap12">
+      <soap12:address location="http://localhost:54570/TinTucDaoTaoWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

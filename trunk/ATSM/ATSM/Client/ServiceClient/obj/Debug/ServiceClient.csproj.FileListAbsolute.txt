@@ -13,3 +13,8 @@ F:\online-shop-enova\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll
 F:\online-shop-enova\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.pdb
 F:\online-shop-enova\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.dll
 F:\online-shop-enova\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.pdb
+E:\Doanbk\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll.config
+E:\Doanbk\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.dll
+E:\Doanbk\ATSM\ATSM\Client\ServiceClient\bin\Debug\ServiceClient.pdb
+E:\Doanbk\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.dll
+E:\Doanbk\ATSM\ATSM\Client\ServiceClient\obj\Debug\ServiceClient.pdb
