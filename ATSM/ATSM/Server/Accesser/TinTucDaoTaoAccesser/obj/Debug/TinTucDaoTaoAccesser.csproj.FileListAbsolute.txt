@@ -2,3 +2,8 @@ E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.dll
 E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.pdb
 E:\Doanbk\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.dll
 E:\Doanbk\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TinTucDaoTaoAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\TinTucDaoTaoAccesser\obj\Debug\TinTucDaoTaoAccesser.pdb

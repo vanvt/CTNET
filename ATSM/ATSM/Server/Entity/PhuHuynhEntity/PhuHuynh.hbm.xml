@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="PhuHuynhEntity">
+    <class name="PhuHuynh" table="PhuHuynh">
+        <id name="Maph">
+            <column name="Maph" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Hotencha">
+            <column name="Hotencha" />
+        </property>
+        <property name="Nghenghiepcha">
+            <column name="Nghenghiepcha" />
+        </property>
+        <property name="Hotenme">
+            <column name="Hotenme" />
+        </property>
+        <property name="Nghenghiepme">
+            <column name="Nghenghiepme" />
+        </property>
+        <property name="Diachi">
+            <column name="Diachi" />
+        </property>
+        <property name="Sodienthoai">
+            <column name="Sodienthoai" />
+        </property>
+        <property name="Email">
+            <column name="Email" />
+        </property>
+        <property name="DeleteDate">
+            <column name="DeleteDate" />
+        </property>
+        <property name="DeleteUserId">
+            <column name="DeleteUserId" />
+        </property>
+    </class>
+</hibernate-mapping>

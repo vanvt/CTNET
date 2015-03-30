@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="LopSinhHoatEntityEntity">
+    <class name="LopSinhHoatEntity" table="LopSinhHoatEntity">
+        <id name="Malsh">
+            <column name="Malsh" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Manganh">
+            <column name="Manganh" />
+        </property>
+        <property name="Macbgv">
+            <column name="Macbgv" />
+        </property>
+        <property name="Tenlsh">
+            <column name="Tenlsh" />
+        </property>
+        <property name="Siso">
+            <column name="Siso" />
+        </property>
+        <property name="Khoa">
+            <column name="Khoa" />
+        </property>
+        <property name="DeleteDate">
+            <column name="DeleteDate" />
+        </property>
+        <property name="DeleteUserId">
+            <column name="DeleteUserId" />
+        </property>
+    </class>
+</hibernate-mapping>
