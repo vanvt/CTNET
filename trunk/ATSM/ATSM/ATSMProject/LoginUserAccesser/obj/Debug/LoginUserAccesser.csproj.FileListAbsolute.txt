@@ -1,4 +1,0 @@
-F:\online-shop-enova\ATSM\ATSM\Library\LoginUserAccesser.dll
-F:\online-shop-enova\ATSM\ATSM\Library\LoginUserAccesser.pdb
-F:\online-shop-enova\ATSM\ATSM\ATSMProject\LoginUserAccesser\obj\Debug\LoginUserAccesser.dll
-F:\online-shop-enova\ATSM\ATSM\ATSMProject\LoginUserAccesser\obj\Debug\LoginUserAccesser.pdb
