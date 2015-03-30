@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="KhoaEntity">
+    <class name="Khoa" table="Khoa">
+        <id name="Makhoa">
+            <column name="Makhoa" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Tenkhoa">
+            <column name="Tenkhoa" />
+        </property>
+    </class>
+</hibernate-mapping>

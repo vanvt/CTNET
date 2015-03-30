@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="NganhEntity">
+    <class name="Nganh" table="Nganh">
+        <id name="Manganh">
+            <column name="Manganh" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Tennganh">
+            <column name="Tennganh" />
+        </property>
+        <property name="Sotcdc">
+            <column name="Sotcdc" />
+        </property>
+        <property name="Sotcbb">
+            <column name="Sotcbb" />
+        </property>
+        <property name="Sotctc">
+            <column name="Sotctc" />
+        </property>
+        <property name="MoTa">
+            <column name="MoTa" />
+        </property>
+        <property name="Makhoa">
+            <column name="Makhoa" />
+        </property>
+    </class>
+</hibernate-mapping>

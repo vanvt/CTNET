@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="ChinhSachEntity">
+    <class name="ChinhSach" table="ChinhSach">
+        <id name="Macs">
+            <column name="Macs" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Tencs">
+            <column name="Tencs" />
+        </property>
+    </class>
+</hibernate-mapping>

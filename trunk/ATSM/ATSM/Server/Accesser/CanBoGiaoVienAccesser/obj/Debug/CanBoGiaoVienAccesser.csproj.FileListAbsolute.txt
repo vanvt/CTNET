@@ -3,3 +3,8 @@ E:\Doanbk\ATSM\ATSM\Server\Library\CanBoGiaoVienAccesser.pdb
 E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.dll
 E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.pdb
 E:\Doanbk\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Library\CanBoGiaoVienAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\CanBoGiaoVienAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\CanBoGiaoVienAccesser\obj\Debug\CanBoGiaoVienAccesser.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="HocPhanEntity">
+    <class name="HocPhan" table="HocPhan">
+        <id name="Mahp">
+            <column name="Mahp" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Tenhp">
+            <column name="Tenhp" />
+        </property>
+        <property name="Sotc">
+            <column name="Sotc" />
+        </property>
+        <property name="Lythuyet">
+            <column name="Lythuyet" />
+        </property>
+        <property name="Thuchanhbt">
+            <column name="Thuchanhbt" />
+        </property>
+        <property name="Doan">
+            <column name="Doan" />
+        </property>
+        <property name="MoTa">
+            <column name="MoTa" />
+        </property>
+        <property name="Ghichu">
+            <column name="Ghichu" />
+        </property>
+        <property name="DeleteDate">
+            <column name="DeleteDate" />
+        </property>
+        <property name="DeleteUserId">
+            <column name="DeleteUserId" />
+        </property>
+    </class>
+</hibernate-mapping>

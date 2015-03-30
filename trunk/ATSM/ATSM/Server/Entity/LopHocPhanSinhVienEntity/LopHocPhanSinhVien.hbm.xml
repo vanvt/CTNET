@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JVL" assembly="LopHocPhanSinhVienEntity">
+    <class name="LopHocPhanSinhVien" table="LopHocPhanSinhVien">
+        <id name="Id">
+            <column name="Id" not-null="true" />
+            <generator class="assigned" />
+        </id>
+        <property name="Masv">
+            <column name="Masv" />
+        </property>
+        <property name="Malhp">
+            <column name="Malhp" />
+        </property>
+        <property name="Dtkgk">
+            <column name="Dtkgk" />
+        </property>
+        <property name="Dtkck">
+            <column name="Dtkck" />
+        </property>
+        <property name="Dtkhp">
+            <column name="Dtkhp" />
+        </property>
+        <property name="Dcc">
+            <column name="Dcc" />
+        </property>
+        <property name="Tichluy">
+            <column name="Tichluy" />
+        </property>
+        <property name="Ghichu">
+            <column name="Ghichu" />
+        </property>
+        <property name="DeleteDate">
+            <column name="DeleteDate" />
+        </property>
+        <property name="DeleteUserId">
+            <column name="DeleteUserId" />
+        </property>
+    </class>
+</hibernate-mapping>
