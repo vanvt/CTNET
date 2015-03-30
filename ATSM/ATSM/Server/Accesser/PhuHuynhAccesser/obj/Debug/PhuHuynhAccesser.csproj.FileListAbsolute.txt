@@ -1,0 +1,9 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\PhuHuynhAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\PhuHuynhAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\Iesi.Collections.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\NHibernate.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\PhuHuynhEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\bin\Debug\PhuHuynhEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\obj\Debug\PhuHuynhAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\obj\Debug\PhuHuynhAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\PhuHuynhAccesser\obj\Debug\PhuHuynhAccesser.pdb

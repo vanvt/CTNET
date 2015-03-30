@@ -1,1 +1,4 @@
-F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChinhSachAccesser\obj\Debug\ChinhSachAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChinhSachAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChinhSachAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChinhSachAccesser\obj\Debug\ChinhSachAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChinhSachAccesser\obj\Debug\ChinhSachAccesser.pdb

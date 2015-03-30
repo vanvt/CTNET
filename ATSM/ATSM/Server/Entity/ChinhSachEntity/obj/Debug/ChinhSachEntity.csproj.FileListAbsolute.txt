@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChinhSachEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChinhSachEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChinhSachEntity\obj\Debug\ChinhSachEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChinhSachEntity\obj\Debug\ChinhSachEntity.pdb

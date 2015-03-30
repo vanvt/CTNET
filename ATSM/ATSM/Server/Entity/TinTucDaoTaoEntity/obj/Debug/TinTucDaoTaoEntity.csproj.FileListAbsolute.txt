@@ -2,3 +2,7 @@ E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Library\TinTucDaoTaoEntity.pdb
 E:\Doanbk\ATSM\ATSM\Server\Entity\TinTucDaoTaoEntity\obj\Debug\TinTucDaoTaoEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Entity\TinTucDaoTaoEntity\obj\Debug\TinTucDaoTaoEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TinTucDaoTaoEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TinTucDaoTaoEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\TinTucDaoTaoEntity\obj\Debug\TinTucDaoTaoEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\TinTucDaoTaoEntity\obj\Debug\TinTucDaoTaoEntity.pdb

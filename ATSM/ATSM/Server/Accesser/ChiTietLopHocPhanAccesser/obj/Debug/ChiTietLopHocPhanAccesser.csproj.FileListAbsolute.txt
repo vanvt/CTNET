@@ -1,0 +1,5 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChiTietLopHocPhanAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChiTietLopHocPhanAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChiTietLopHocPhanAccesser\obj\Debug\ChiTietLopHocPhanAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChiTietLopHocPhanAccesser\obj\Debug\ChiTietLopHocPhanAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChiTietLopHocPhanAccesser\obj\Debug\ChiTietLopHocPhanAccesser.pdb

@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\PhuHuynhEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\PhuHuynhEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\PhuHuynhEntity\obj\Debug\PhuHuynhEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\PhuHuynhEntity\obj\Debug\PhuHuynhEntity.pdb

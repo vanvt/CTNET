@@ -1,1 +1,5 @@
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\KhoaAccesser\obj\Debug\KhoaAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Library\KhoaAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\KhoaAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\KhoaAccesser\obj\Debug\KhoaAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\KhoaAccesser\obj\Debug\KhoaAccesser.pdb

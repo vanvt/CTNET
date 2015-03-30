@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NhatKyEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NhatKyEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\NhatKyEntity\obj\Debug\NhatKyEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\NhatKyEntity\obj\Debug\NhatKyEntity.pdb

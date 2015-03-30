@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\SinhVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\SinhVienEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\SinhVienEntity\obj\Debug\SinhVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\SinhVienEntity\obj\Debug\SinhVienEntity.pdb

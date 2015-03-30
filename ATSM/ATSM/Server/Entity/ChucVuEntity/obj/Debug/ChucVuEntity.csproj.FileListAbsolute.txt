@@ -2,3 +2,7 @@ E:\Doanbk\ATSM\ATSM\Server\library\ChucVuEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\library\ChucVuEntity.pdb
 E:\Doanbk\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\library\ChucVuEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\library\ChucVuEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChucVuEntity\obj\Debug\ChucVuEntity.pdb

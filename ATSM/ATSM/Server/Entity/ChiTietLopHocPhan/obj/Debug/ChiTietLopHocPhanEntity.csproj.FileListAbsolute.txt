@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChiTietLopHocPhanEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\ChiTietLopHocPhanEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChiTietLopHocPhan\obj\Debug\ChiTietLopHocPhanEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\ChiTietLopHocPhan\obj\Debug\ChiTietLopHocPhanEntity.pdb

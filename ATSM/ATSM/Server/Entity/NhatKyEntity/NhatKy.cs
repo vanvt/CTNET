@@ -16,7 +16,7 @@ namespace JVL
         //
         String tacvu;
         //
-        String? lydo;
+        String lydo;
         //
         DateTime thoigian;
         //
@@ -37,7 +37,7 @@ namespace JVL
         
         public virtual String Tacvu { get { return tacvu; } set { tacvu = value; } }
         
-        public virtual String? Lydo { get { return lydo; } set { lydo = value; } }
+        public virtual String Lydo { get { return lydo; } set { lydo = value; } }
         
         public virtual DateTime Thoigian { get { return thoigian; } set { thoigian = value; } }
         

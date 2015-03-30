@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\LopHocPhanSinhVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\LopHocPhanSinhVienEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\LopHocPhanSinhVienEntity\obj\Debug\LopHocPhanSinhVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\LopHocPhanSinhVienEntity\obj\Debug\LopHocPhanSinhVienEntity.pdb
