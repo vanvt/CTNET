@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NganhEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NganhEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\NganhEntity\obj\Debug\NganhEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\NganhEntity\obj\Debug\NganhEntity.pdb

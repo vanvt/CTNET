@@ -1,0 +1,5 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NganhAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NganhAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NganhAccesser\obj\Debug\NganhAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NganhAccesser\obj\Debug\NganhAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NganhAccesser\obj\Debug\NganhAccesser.pdb

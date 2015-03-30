@@ -7,3 +7,4 @@ E:\Doanbk\ATSM\ATSM\Server\Library\LoginUserAccesser.pdb
 E:\Doanbk\ATSM\ATSM\Server\Accesser\LoginUserAccesser\obj\Debug\LoginUserAccesser.csprojResolveAssemblyReference.cache
 E:\Doanbk\ATSM\ATSM\Server\Accesser\LoginUserAccesser\obj\Debug\LoginUserAccesser.dll
 E:\Doanbk\ATSM\ATSM\Server\Accesser\LoginUserAccesser\obj\Debug\LoginUserAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\LoginUserAccesser\obj\Debug\LoginUserAccesser.csprojResolveAssemblyReference.cache

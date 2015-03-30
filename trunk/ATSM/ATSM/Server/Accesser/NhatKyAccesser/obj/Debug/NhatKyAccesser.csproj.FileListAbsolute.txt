@@ -1,0 +1,5 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NhatKyAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\NhatKyAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NhatKyAccesser\obj\Debug\NhatKyAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NhatKyAccesser\obj\Debug\NhatKyAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\NhatKyAccesser\obj\Debug\NhatKyAccesser.pdb

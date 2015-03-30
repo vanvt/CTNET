@@ -2,3 +2,7 @@ E:\Doanbk\ATSM\ATSM\Server\Library\CanBoGiaoVienEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Library\CanBoGiaoVienEntity.pdb
 E:\Doanbk\ATSM\ATSM\Server\Entity\CanBoGiaoVienEntity\obj\Debug\CanBoGiaoVienEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Entity\CanBoGiaoVienEntity\obj\Debug\CanBoGiaoVienEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\CanBoGiaoVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\CanBoGiaoVienEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\CanBoGiaoVienEntity\obj\Debug\CanBoGiaoVienEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\CanBoGiaoVienEntity\obj\Debug\CanBoGiaoVienEntity.pdb

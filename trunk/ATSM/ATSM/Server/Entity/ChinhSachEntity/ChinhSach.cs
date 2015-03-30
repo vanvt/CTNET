@@ -10,7 +10,7 @@ namespace JVL
         //
         int macs;
         //
-        String? tencs;
+        String tencs;
         
         public ChinhSach()
         {
@@ -19,7 +19,7 @@ namespace JVL
         
         public virtual int Macs { get { return macs; } set { macs = value; } }
         
-        public virtual String? Tencs { get { return tencs; } set { tencs = value; } }
+        public virtual String Tencs { get { return tencs; } set { tencs = value; } }
         
     }
 }

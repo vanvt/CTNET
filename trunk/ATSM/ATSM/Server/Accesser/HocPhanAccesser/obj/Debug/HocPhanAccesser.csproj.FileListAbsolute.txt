@@ -1,0 +1,9 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\HocPhanAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\HocPhanAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\HocPhanEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\Iesi.Collections.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\NHibernate.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\bin\Debug\HocPhanEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\obj\Debug\HocPhanAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\obj\Debug\HocPhanAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\HocPhanAccesser\obj\Debug\HocPhanAccesser.pdb

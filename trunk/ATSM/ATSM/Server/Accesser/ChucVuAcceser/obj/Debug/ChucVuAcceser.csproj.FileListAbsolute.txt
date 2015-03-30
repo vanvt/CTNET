@@ -4,6 +4,5 @@ E:\Doanbk\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.dll
 E:\Doanbk\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.pdb
 F:\online-shop-enova\ATSM\ATSM\Server\Library\ChucVuAcceser.dll
 F:\online-shop-enova\ATSM\ATSM\Server\Library\ChucVuAcceser.pdb
-F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.csprojResolveAssemblyReference.cache
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.dll
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\ChucVuAcceser\obj\Debug\ChucVuAcceser.pdb

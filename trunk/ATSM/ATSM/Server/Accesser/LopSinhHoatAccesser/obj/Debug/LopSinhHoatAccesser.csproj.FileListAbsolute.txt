@@ -1,1 +1,5 @@
 F:\online-shop-enova\ATSM\ATSM\Server\Accesser\LopSinhHoatAccesser\obj\Debug\LopSinhHoatAccesser.csprojResolveAssemblyReference.cache
+F:\online-shop-enova\ATSM\ATSM\Server\Library\LopSinhHoatAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\LopSinhHoatAccesser.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\LopSinhHoatAccesser\obj\Debug\LopSinhHoatAccesser.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Accesser\LopSinhHoatAccesser\obj\Debug\LopSinhHoatAccesser.pdb

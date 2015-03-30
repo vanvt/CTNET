@@ -2,3 +2,7 @@ E:\Doanbk\ATSM\ATSM\Server\Library\TheLoaiTinEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Library\TheLoaiTinEntity.pdb
 E:\Doanbk\ATSM\ATSM\Server\Entity\TheLoaiTinEntity\obj\Debug\TheLoaiTinEntity.dll
 E:\Doanbk\ATSM\ATSM\Server\Entity\TheLoaiTinEntity\obj\Debug\TheLoaiTinEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TheLoaiTinEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\TheLoaiTinEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\TheLoaiTinEntity\obj\Debug\TheLoaiTinEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\TheLoaiTinEntity\obj\Debug\TheLoaiTinEntity.pdb

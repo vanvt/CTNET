@@ -1,0 +1,4 @@
+F:\online-shop-enova\ATSM\ATSM\Server\Library\KhoaEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Library\KhoaEntity.pdb
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\KhoaEntity\obj\Debug\KhoaEntity.dll
+F:\online-shop-enova\ATSM\ATSM\Server\Entity\KhoaEntity\obj\Debug\KhoaEntity.pdb
