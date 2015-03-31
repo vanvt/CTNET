@@ -52,5 +52,15 @@ namespace ServiceClient.Properties {
                 return ((string)(this["ServiceClient_TinTucDaoTaoWS_TinTucDaoTaoWS"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:54570/ThongTinSinhVienWS.asmx")]
+        public string ServiceClient_ThongTinSinhVienWS_ThongTinSinhVienWS {
+            get {
+                return ((string)(this["ServiceClient_ThongTinSinhVienWS_ThongTinSinhVienWS"]));
+            }
+        }
     }
 }

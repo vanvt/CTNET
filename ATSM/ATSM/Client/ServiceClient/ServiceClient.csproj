@@ -51,6 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\ThongTinSinhVienWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\TinTucDaoTaoWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,6 +87,14 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\ThongTinSinhVienWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ThongTinSinhVienWS\ThongTinSinhVienWS.wsdl" />
+    <None Include="Web References\ThongTinSinhVienWS\ThongTinSinhVienWSI.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\TinTucDaoTaoWS\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -110,6 +123,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>ServiceClient_LoginUserWS_LoginUserWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:54570/ThongTinSinhVienWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ThongTinSinhVienWS\</RelPath>
+      <UpdateFromURL>http://localhost:54570/ThongTinSinhVienWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ServiceClient_ThongTinSinhVienWS_ThongTinSinhVienWS</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost:54570/TinTucDaoTaoWS.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
@@ -142,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\TinTucDaoTaoWS\TinTucDaoTaoWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ThongTinSinhVienWS\ThongTinSinhVienWS.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
