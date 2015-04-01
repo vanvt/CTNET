@@ -65,6 +65,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
+    <Reference Include="ThongTinSinhVienBL">
+      <HintPath>..\..\Library\ThongTinSinhVienBL.dll</HintPath>
+    </Reference>
+    <Reference Include="ThongTinSinhVienWSI">
+      <HintPath>..\..\Library\ThongTinSinhVienWSI.dll</HintPath>
+    </Reference>
     <Reference Include="TinTucDaoTaoBL">
       <HintPath>..\..\Library\TinTucDaoTaoBL.dll</HintPath>
     </Reference>
@@ -89,6 +95,7 @@
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="ThongTinSinhVienWS.asmx" />
     <Content Include="TinTucDaoTaoWS.asmx" />
     <Content Include="UserWS.asmx" />
     <Content Include="Web.config">
@@ -101,6 +108,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongTinSinhVienWS.asmx.cs">
+      <DependentUpon>ThongTinSinhVienWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TinTucDaoTaoWS.asmx.cs">
       <DependentUpon>TinTucDaoTaoWS.asmx</DependentUpon>
       <SubType>Component</SubType>
