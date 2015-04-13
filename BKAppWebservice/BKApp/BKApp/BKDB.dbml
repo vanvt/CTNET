@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ATSM" Class="BKDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=222.255.167.6;Initial Catalog=ATSM;Persist Security Info=True;User ID=atsm" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ATSMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CanBoGiaoVien" Member="CanBoGiaoViens">
+    <Type Name="CanBoGiaoVien">
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tencbgv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CanBoGiaoVien_LopHocPhan" Member="LopHocPhans" ThisKey="Macbgv" OtherKey="Macbgv" Type="LopHocPhan" />
+      <Association Name="CanBoGiaoVien_LopSinhHoat" Member="LopSinhHoats" ThisKey="Macbgv" OtherKey="Macbgv" Type="LopSinhHoat" />
+      <Association Name="CanBoGiaoVien_NhatKy" Member="NhatKies" ThisKey="Macbgv" OtherKey="Macbgv" Type="NhatKy" />
+      <Association Name="CanBoGiaoVien_TinTucDaoTao" Member="TinTucDaoTaos" ThisKey="Macbgv" OtherKey="Macbgv" Type="TinTucDaoTao" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TinTucSinhVien" Member="TinTucSinhViens">
+    <Type Name="TinTucSinhVien">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tieude" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tomtat" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Noidung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Filedinhkem" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hinhanh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SinhVien_TinTucSinhVien" Member="SinhVien" ThisKey="Masv" OtherKey="Masv" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChinhSach" Member="ChinhSaches">
+    <Type Name="ChinhSach">
+      <Column Name="Macs" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tencs" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="ChinhSach_SinhVien" Member="SinhViens" ThisKey="Macs" OtherKey="Macs" Type="SinhVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietLopHocPhan" Member="ChiTietLopHocPhans">
+    <Type Name="ChiTietLopHocPhan">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Thu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tutiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dentiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phong" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopHocPhan_ChiTietLopHocPhan" Member="LopHocPhan" ThisKey="Malhp" OtherKey="Malhp" Type="LopHocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChucVu" Member="ChucVus">
+    <Type Name="ChucVu">
+      <Column Name="Macv" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tencv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="ChucVu_LoginUser" Member="LoginUsers" ThisKey="Macv" OtherKey="Macv" Type="LoginUser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocKy" Member="HocKies">
+    <Type Name="HocKy">
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tenhk" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="HocKy_LopHocPhan" Member="LopHocPhans" ThisKey="Mahk" OtherKey="Mahk" Type="LopHocPhan" />
+      <Association Name="HocKy_TheoDoiHocKy" Member="TheoDoiHocKies" ThisKey="Mahk" OtherKey="Mahk" Type="TheoDoiHocKy" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocPhan" Member="HocPhans">
+    <Type Name="HocPhan">
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tenhp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sotc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lythuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thuchanhbt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Doan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HocPhan_LopHocPhan" Member="LopHocPhans" ThisKey="Mahp" OtherKey="Mahp" Type="LopHocPhan" />
+      <Association Name="HocPhan_NganhHocPhan" Member="NganhHocPhans" ThisKey="Mahp" OtherKey="Mahp" Type="NganhHocPhan" />
+      <Association Name="HocPhan_NganhHocPhanDieuKien" Member="NganhHocPhanDieuKiens" ThisKey="Mahp" OtherKey="Mahp" Type="NganhHocPhanDieuKien" />
+      <Association Name="HocPhan_TaiLieu" Member="TaiLieus" ThisKey="Mahp" OtherKey="Mahp" Type="TaiLieu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Khoa" Member="Khoas">
+    <Type Name="Khoa">
+      <Column Name="Makhoa" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tenkhoa" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Khoa_Nganh" Member="Nganhs" ThisKey="Makhoa" OtherKey="Makhoa" Type="Nganh" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoginUser" Member="LoginUsers">
+    <Type Name="LoginUser">
+      <Column Name="LoginUserId" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NewPassword" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macv" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ChucVu_LoginUser" Member="ChucVu" ThisKey="Macv" OtherKey="Macv" Type="ChucVu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LopHocPhan" Member="LopHocPhans">
+    <Type Name="LopHocPhan">
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soluongdk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ngaybatdau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ngaythi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Giothi" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Ngaynopdiem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopHocPhan_ChiTietLopHocPhan" Member="ChiTietLopHocPhans" ThisKey="Malhp" OtherKey="Malhp" Type="ChiTietLopHocPhan" />
+      <Association Name="LopHocPhan_LopHocPhanSinhVien" Member="LopHocPhanSinhViens" ThisKey="Malhp" OtherKey="Malhp" Type="LopHocPhanSinhVien" />
+      <Association Name="LopHocPhan_NhatKy" Member="NhatKies" ThisKey="Malhp" OtherKey="Malhp" Type="NhatKy" />
+      <Association Name="LopHocPhan_PhongThi" Member="PhongThis" ThisKey="Malhp" OtherKey="Malhp" Type="PhongThi" />
+      <Association Name="CanBoGiaoVien_LopHocPhan" Member="CanBoGiaoVien" ThisKey="Macbgv" OtherKey="Macbgv" Type="CanBoGiaoVien" IsForeignKey="true" />
+      <Association Name="HocKy_LopHocPhan" Member="HocKy" ThisKey="Mahk" OtherKey="Mahk" Type="HocKy" IsForeignKey="true" />
+      <Association Name="HocPhan_LopHocPhan" Member="HocPhan" ThisKey="Mahp" OtherKey="Mahp" Type="HocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LopHocPhanSinhVien" Member="LopHocPhanSinhViens">
+    <Type Name="LopHocPhanSinhVien">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Dtkgk" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dtkck" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dtkhp" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dcc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Tichluy" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopHocPhan_LopHocPhanSinhVien" Member="LopHocPhan" ThisKey="Malhp" OtherKey="Malhp" Type="LopHocPhan" IsForeignKey="true" />
+      <Association Name="SinhVien_LopHocPhanSinhVien" Member="SinhVien" ThisKey="Masv" OtherKey="Masv" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LopSinhHoat" Member="LopSinhHoats">
+    <Type Name="LopSinhHoat">
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenlsh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Siso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopSinhHoat_LopSinhHoatSinhVien" Member="LopSinhHoatSinhViens" ThisKey="Malsh" OtherKey="Malsh" Type="LopSinhHoatSinhVien" />
+      <Association Name="LopSinhHoat_SinhVien" Member="SinhViens" ThisKey="Malsh" OtherKey="Malsh" Type="SinhVien" />
+      <Association Name="CanBoGiaoVien_LopSinhHoat" Member="CanBoGiaoVien" ThisKey="Macbgv" OtherKey="Macbgv" Type="CanBoGiaoVien" IsForeignKey="true" />
+      <Association Name="Nganh_LopSinhHoat" Member="Nganh" ThisKey="Manganh" OtherKey="Manganh" Type="Nganh" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LopSinhHoatSinhVien" Member="LopSinhHoatSinhViens">
+    <Type Name="LopSinhHoatSinhVien">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Sotctl" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dtbctl" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopSinhHoat_LopSinhHoatSinhVien" Member="LopSinhHoat" ThisKey="Malsh" OtherKey="Malsh" Type="LopSinhHoat" IsForeignKey="true" />
+      <Association Name="SinhVien_LopSinhHoatSinhVien" Member="SinhVien" ThisKey="Masv" OtherKey="Masv" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nganh" Member="Nganhs">
+    <Type Name="Nganh">
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tennganh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Sotcdc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sotcbb" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sotctc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Makhoa" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Nganh_LopSinhHoat" Member="LopSinhHoats" ThisKey="Manganh" OtherKey="Manganh" Type="LopSinhHoat" />
+      <Association Name="Nganh_NganhHocPhan" Member="NganhHocPhans" ThisKey="Manganh" OtherKey="Manganh" Type="NganhHocPhan" />
+      <Association Name="Nganh_NganhHocPhanDieuKien" Member="NganhHocPhanDieuKiens" ThisKey="Manganh" OtherKey="Manganh" Type="NganhHocPhanDieuKien" />
+      <Association Name="Khoa_Nganh" Member="Khoa" ThisKey="Makhoa" OtherKey="Makhoa" Type="Khoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NganhHocPhan" Member="NganhHocPhans">
+    <Type Name="NganhHocPhan">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tuchon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Nganh_NganhHocPhan" Member="Nganh" ThisKey="Manganh" OtherKey="Manganh" Type="Nganh" IsForeignKey="true" />
+      <Association Name="HocPhan_NganhHocPhan" Member="HocPhan" ThisKey="Mahp" OtherKey="Mahp" Type="HocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NganhHocPhanDieuKien" Member="NganhHocPhanDieuKiens">
+    <Type Name="NganhHocPhanDieuKien">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Dieukien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Nganh_NganhHocPhanDieuKien" Member="Nganh" ThisKey="Manganh" OtherKey="Manganh" Type="Nganh" IsForeignKey="true" />
+      <Association Name="HocPhan_NganhHocPhanDieuKien" Member="HocPhan" ThisKey="Mahp" OtherKey="Mahp" Type="HocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhatKy" Member="NhatKies">
+    <Type Name="NhatKy">
+      <Column Name="Mank" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tacvu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lydo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CanBoGiaoVien_NhatKy" Member="CanBoGiaoVien" ThisKey="Macbgv" OtherKey="Macbgv" Type="CanBoGiaoVien" IsForeignKey="true" />
+      <Association Name="LopHocPhan_NhatKy" Member="LopHocPhan" ThisKey="Malhp" OtherKey="Malhp" Type="LopHocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhongThi" Member="PhongThis">
+    <Type Name="PhongThi">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Maphong" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LopHocPhan_PhongThi" Member="LopHocPhan" ThisKey="Malhp" OtherKey="Malhp" Type="LopHocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhuHuynh" Member="PhuHuynhs">
+    <Type Name="PhuHuynh">
+      <Column Name="Maph" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Hotencha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepcha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Hotenme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sodienthoai" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="PhuHuynh_SinhVien" Member="SinhViens" ThisKey="Maph" OtherKey="Maph" Type="SinhVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SinhVien" Member="SinhViens">
+    <Type Name="SinhVien">
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Macs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Maph" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tensv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SinhVien_TinTucSinhVien" Member="TinTucSinhViens" ThisKey="Masv" OtherKey="Masv" Type="TinTucSinhVien" />
+      <Association Name="SinhVien_LopHocPhanSinhVien" Member="LopHocPhanSinhViens" ThisKey="Masv" OtherKey="Masv" Type="LopHocPhanSinhVien" />
+      <Association Name="SinhVien_LopSinhHoatSinhVien" Member="LopSinhHoatSinhViens" ThisKey="Masv" OtherKey="Masv" Type="LopSinhHoatSinhVien" />
+      <Association Name="SinhVien_TheoDoiHocKy" Member="TheoDoiHocKies" ThisKey="Masv" OtherKey="Masv" Type="TheoDoiHocKy" />
+      <Association Name="ChinhSach_SinhVien" Member="ChinhSach" ThisKey="Macs" OtherKey="Macs" Type="ChinhSach" IsForeignKey="true" />
+      <Association Name="PhuHuynh_SinhVien" Member="PhuHuynh" ThisKey="Maph" OtherKey="Maph" Type="PhuHuynh" IsForeignKey="true" />
+      <Association Name="LopSinhHoat_SinhVien" Member="LopSinhHoat" ThisKey="Malsh" OtherKey="Malsh" Type="LopSinhHoat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiLieu" Member="TaiLieus">
+    <Type Name="TaiLieu">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Sochuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tieude" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noidung" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Baitap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Docthem" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaycn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HocPhan_TaiLieu" Member="HocPhan" ThisKey="Mahp" OtherKey="Mahp" Type="HocPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TheLoaiTin" Member="TheLoaiTins">
+    <Type Name="TheLoaiTin">
+      <Column Name="Matlt" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tentlt" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="TheLoaiTin_TinTucDaoTao" Member="TinTucDaoTaos" ThisKey="Matlt" OtherKey="Matlt" Type="TinTucDaoTao" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TheoDoiHocKy" Member="TheoDoiHocKies">
+    <Type Name="TheoDoiHocKy">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Tongtc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dtbchk" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Diemrl" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HocKy_TheoDoiHocKy" Member="HocKy" ThisKey="Mahk" OtherKey="Mahk" Type="HocKy" IsForeignKey="true" />
+      <Association Name="SinhVien_TheoDoiHocKy" Member="SinhVien" ThisKey="Masv" OtherKey="Masv" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TinTucDaoTao" Member="TinTucDaoTaos">
+    <Type Name="TinTucDaoTao">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Matlt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tieude" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Tomtat" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noidung" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Filedinhkem" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hinhanh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CanBoGiaoVien_TinTucDaoTao" Member="CanBoGiaoVien" ThisKey="Macbgv" OtherKey="Macbgv" Type="CanBoGiaoVien" IsForeignKey="true" />
+      <Association Name="TheLoaiTin_TinTucDaoTao" Member="TheLoaiTin" ThisKey="Matlt" OtherKey="Matlt" Type="TheLoaiTin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CheckLogin" Method="CheckLogin">
+    <Parameter Name="loginUserId" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="CheckLoginResult">
+      <Column Name="LoginUserId" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NewPassword" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macv" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetTinTucPublic" Method="GetTinTucPublic">
+    <ElementType Name="GetTinTucPublicResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Matlt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tieude" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Tomtat" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noidung" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Filedinhkem" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hinhanh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getCanBoGiaoVienByMacbgv" Method="getCanBoGiaoVienByMacbgv">
+    <Parameter Name="Macbgv" Parameter="macbgv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getCanBoGiaoVienByMacbgvResult">
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tencbgv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getTheLoaiTinByMatlt" Method="getTheLoaiTinByMatlt">
+    <Parameter Name="Matlt" Parameter="matlt" Type="System.Int32" DbType="Int" />
+    <ElementType Name="getTheLoaiTinByMatltResult">
+      <Column Name="Matlt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tentlt" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getSinhVienByMasv" Method="getSinhVienByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getSinhVienByMasvResult">
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Macs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Maph" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tensv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getPhuHuynhByMaph" Method="getPhuHuynhByMaph">
+    <Parameter Name="maph" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getPhuHuynhByMaphResult">
+      <Column Name="Maph" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Hotencha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepcha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Hotenme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sodienthoai" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getLopSinhHoatByMalsh" Method="getLopSinhHoatByMalsh">
+    <Parameter Name="malsh" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getLopSinhHoatByMalshResult">
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenlsh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Siso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getThongTinSinhVienByMasv" Method="getThongTinSinhVienByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getThongTinSinhVienByMasvResult">
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Macs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Maph" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Malsh" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tensv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macs1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tencs" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Maph1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Hotencha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepcha" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Hotenme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nghenghiepme" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sodienthoai" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DeleteDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Malsh1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Manganh" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenlsh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Siso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeleteDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Manganh1" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tennganh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Sotcdc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sotcbb" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sotctc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Makhoa" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Makhoa1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenkhoa" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getTheoDoiHocKyByMasv" Method="getTheoDoiHocKyByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getTheoDoiHocKyByMasvResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Tongtc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dtbchk" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Diemrl" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getTinTucSinhVienByMasv" Method="getTinTucSinhVienByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getTinTucSinhVienByMasvResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tieude" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tomtat" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Noidung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Filedinhkem" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Thoigian" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hinhanh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getLopHocPhanByMasv" Method="getLopHocPhanByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getLopHocPhanByMasvResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Masv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Dtkgk" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dtkck" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dtkhp" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Dcc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Tichluy" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Malhp1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soluongdk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ngaybatdau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ngaythi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Giothi" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Ngaynopdiem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ghichu1" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mahp1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenhp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sotc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lythuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thuchanhbt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Doan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ghichu2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getChiTietLopHocPhanByMalhp" Method="getChiTietLopHocPhanByMalhp">
+    <Parameter Name="malhp" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getChiTietLopHocPhanByMalhpResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Thu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tutiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dentiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phong" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getListLopHocPhanDKByMasv" Method="getListLopHocPhanDKByMasv">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="getListLopHocPhanDKByMasvResult">
+      <Column Name="Malhp" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Mahp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Macbgv" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mahk" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soluongdk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ngaybatdau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ngaythi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Giothi" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Ngaynopdiem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mahp1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenhp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sotc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lythuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thuchanhbt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Doan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ghichu1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DeleteDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Macbgv1" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tencbgv" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Sodt" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Noisinh" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Noithuongtru" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Gioitinh" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Dantoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tongiao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Socmnd" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="DeleteDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeleteUserId2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mahk1" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Tenhk" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DangKiLopHp" Method="DangKiLopHp">
+    <Parameter Name="masv" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="malhp" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

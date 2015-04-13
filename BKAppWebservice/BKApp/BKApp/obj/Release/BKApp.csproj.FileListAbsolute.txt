@@ -1,0 +1,4 @@
+F:\online-shop-enova\BKAppWebservice\BKApp\BKApp\bin\BKApp.dll
+F:\online-shop-enova\BKAppWebservice\BKApp\BKApp\bin\BKApp.pdb
+F:\online-shop-enova\BKAppWebservice\BKApp\BKApp\obj\Release\BKApp.dll
+F:\online-shop-enova\BKAppWebservice\BKApp\BKApp\obj\Release\BKApp.pdb

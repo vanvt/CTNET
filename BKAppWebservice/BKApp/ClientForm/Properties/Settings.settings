@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClientForm.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClientForm_TinTucDaoTaoWS_TinTucDaoTaoWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:13597/TinTucDaoTaoWS.asmx</Value>
+    </Setting>
+    <Setting Name="ClientForm_LoginWS_LoginWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:13597/LoginWS.asmx</Value>
+    </Setting>
+    <Setting Name="ClientForm_ThongTinSinhVienWS_ThongTinSinhVienWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:13597/ThongTinSinhVienWS.asmx</Value>
+    </Setting>
+    <Setting Name="ClientForm_LopHocPhanDKWS_LopHocPhanDKWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:13597/LopHocPhanDKWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

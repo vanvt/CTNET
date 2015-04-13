@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BKApp.dll">
+      <publishTime>04/12/2015 17:20:54</publishTime>
+    </File>
+    <File Include="BKDB.dbml">
+      <publishTime>04/12/2015 17:12:42</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/04/2015 22:21:58</publishTime>
+    </File>
+    <File Include="LoginWS.asmx">
+      <publishTime>02/04/2015 22:45:48</publishTime>
+    </File>
+    <File Include="LopHocPhanDKWS.asmx">
+      <publishTime>04/11/2015 14:10:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.intellisense.js">
+      <publishTime>02/04/2015 22:21:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>02/04/2015 22:21:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>02/04/2015 22:21:58</publishTime>
+    </File>
+    <File Include="ThongTinHocPhanSinhVienWS.asmx">
+      <publishTime>04/04/2015 21:54:02</publishTime>
+    </File>
+    <File Include="ThongTinSinhVienWS.asmx">
+      <publishTime>03/04/2015 00:12:54</publishTime>
+    </File>
+    <File Include="TinTucDaoTaoWS.asmx">
+      <publishTime>02/04/2015 23:17:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/12/2015 17:20:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
