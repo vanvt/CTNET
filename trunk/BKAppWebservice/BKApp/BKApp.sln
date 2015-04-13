@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKApp", "BKApp\BKApp.csproj", "{4D3E08CD-6945-43B7-8964-3461C63CE233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientForm", "ClientForm\ClientForm.csproj", "{C9980611-B776-4642-9448-E40653E30A24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D3E08CD-6945-43B7-8964-3461C63CE233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3E08CD-6945-43B7-8964-3461C63CE233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3E08CD-6945-43B7-8964-3461C63CE233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3E08CD-6945-43B7-8964-3461C63CE233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9980611-B776-4642-9448-E40653E30A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9980611-B776-4642-9448-E40653E30A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9980611-B776-4642-9448-E40653E30A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9980611-B776-4642-9448-E40653E30A24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

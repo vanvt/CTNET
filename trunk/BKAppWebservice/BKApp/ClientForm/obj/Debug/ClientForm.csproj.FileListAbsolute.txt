@@ -1,0 +1,9 @@
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\bin\Debug\ClientForm.exe.config
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\bin\Debug\ClientForm.exe
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\bin\Debug\ClientForm.pdb
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.Form1.resources
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.Properties.Resources.resources
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.csproj.GenerateResource.Cache
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.exe
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.pdb
+F:\online-shop-enova\BKAppWebservice\BKApp\ClientForm\obj\Debug\ClientForm.csprojResolveAssemblyReference.cache
